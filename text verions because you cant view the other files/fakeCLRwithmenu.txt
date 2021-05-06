@@ -1,0 +1,25 @@
+ClrHome
+Output(1,1,"RESET MEMORY")
+Output(2,1,"1:No")
+Output(3,1,"2:Reset")
+Output(4,1,"Resseting ALL will delete")
+Output(5,2,"all data, programs, & Apps")
+Output(6,2,"from RAM & Archive.")
+Wait 1
+getKey→K
+While K≠93
+Wait 0.1
+End
+getKey→K
+ClrHome
+Output(1,1,"Resetting All...")
+Wait 9
+ClrHome
+Output(1,7,"TI-84 Plus CE")
+Output(2,8,"5.4.0.0034")
+Output(8,8,"MEM Cleared")
+Wait 2
+ClrHome
+ClrHome
+Input "",A
+ClrHome

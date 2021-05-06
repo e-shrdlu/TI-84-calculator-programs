@@ -1,0 +1,12 @@
+ClrHome
+Output(1,1,"Resetting All...")
+Wait 9
+ClrHome
+Output(1,7,"TI-84 Plus CE")
+Output(2,8,"5.4.0.0034")
+Output(8,8,"MEM Cleared")
+Wait 2
+ClrHome
+ClrHome
+Input "",A
+ClrHome

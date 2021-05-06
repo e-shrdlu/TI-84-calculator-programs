@@ -1,0 +1,96 @@
+ClrHome
+
+
+
+If 0
+Then
+"A = screensize X
+"B = screensize Y
+"L = len
+"G = Go (while go...). also indicates if snake is alive
+"D = direction 1=U,2=R,3=D,4=L
+"C=matrix to store stuff in
+"E=spot where head currently is X
+"F=spot where head currently is Y
+End
+
+26→A
+10→B
+4→L
+1→G
+2→D
+0→E
+0→F
+{A,B}→dim([C])
+Fill(0,[C])
+
+1→[C](2,2)
+
+While G
+
+For(X,1,A)
+For(Y,1,B)
+If [C](X,Y)
+Then
+Output(Y,X,"o")
+Else
+Output(Y,X," ")
+End
+End
+End
+
+
+
+For(X,1,A)
+For(Y,1,B)
+
+If [C](X,Y)
+Then
+
+If [C](X,Y)=1
+Then
+X→E
+Y→F
+End
+
+[C](X,Y)+1→[C](X,Y)
+
+If [C](X,Y)>L
+0→[C](X,Y)
+
+End
+
+End
+End
+
+getKey→K
+If K=24
+4→D
+If K=25
+1→D
+If K=26
+2→D
+If K=34
+3→D
+
+If D=4
+E-1→E
+If D=1
+F-1→F
+If D=2
+E+1→E
+If D=3
+F+1→F
+
+If E<1 or A<E or F<1 or B<F
+Then
+0→G
+Else
+1→[C](E,F)
+End
+
+
+End
+
+Disp "game over. score is"
+Disp L
