@@ -8,3 +8,6 @@ there are various versions of snake programs, but they all suffer from an issue 
 
 ### fake clear
 displays a fake "memory cleared" message on the screen. Of course this is all just for fun and neither I nor anyone I know has ever used this to cheat on a test
+
+### everything else
+honestly I have no idea what half these are, it's been a while
